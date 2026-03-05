@@ -1,0 +1,171 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Playing Cards</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main id="playing-cards">
+     <div class="card black">
+      <div class="left">A♠</div>
+      <div class="middle">
+        <div class="row"><span>♠</span></div>
+      </div>
+      <div class="right">A♠</div>
+    </div>
+    <div class="card red">
+      <div class="left">2♥</div>
+      <div class="middle">
+        <div class="row"><span>♥</span></div>
+        <div class="row"><span>♥</span></div>
+      </div>
+      <div class="right">2♥</div>
+    </div>
+    <div class="card red">
+      <div class="left">3♦</div>
+      <div class="middle">
+        <div class="row"><span>♦</span></div>
+        <div class="row"><span>♦</span></div>
+        <div class="row"><span>♦</span></div>
+      </div>
+      <div class="right">3♦</div>
+    </div>
+    <div class="card black">
+      <div class="left">4♣</div>
+      <div class="middle">
+        <div class="row"><span>♣</span><span>♣</span></div>
+        <div class="row"><span>♣</span><span>♣</span></div>
+      </div>
+      <div class="right">4♣</div>
+    </div>
+    <div class="card red">
+      <div class="left">5♥</div>
+      <div class="middle">
+        <div class="row"><span>♥</span><span>♥</span></div>
+        <div class="row"><span>♥</span></div>
+        <div class="row"><span>♥</span><span>♥</span></div>
+      </div>
+      <div class="right">5♥</div>
+    </div>
+    <div class="card black">
+      <div class="left">6♠</div>
+      <div class="middle">
+        <div class="row"><span>♠</span><span>♠</span></div>
+        <div class="row"><span>♠</span><span>♠</span></div>
+        <div class="row"><span>♠</span><span>♠</span></div>
+      </div>
+      <div class="right">6♠</div>
+    </div>
+    <div class="card red">
+      <div class="left">7♦</div>
+      <div class="middle">
+        <div class="row"><span>♦</span><span>♦</span></div>
+        <div class="row"><span>♦</span><span>♦</span><span>♦</span></div>
+        <div class="row"><span>♦</span><span>♦</span></div>
+      </div>
+      <div class="right">7♦</div>
+    </div>
+    <div class="card black">
+      <div class="left">8♣</div>
+      <div class="middle">
+        <div class="row"><span>♣</span><span>♣</span></div>
+        <div class="row"><span>♣</span><span>♣</span></div>
+        <div class="row"><span>♣</span><span>♣</span></div>
+        <div class="row"><span>♣</span><span>♣</span></div>
+      </div>
+      <div class="right">8♣</div>
+    </div>
+    <div class="card red">
+      <div class="left">9♥</div>
+      <div class="middle">
+        <div class="row"><span>♥</span><span>♥</span><span>♥</span></div>
+        <div class="row"><span>♥</span><span>♥</span><span>♥</span></div>
+        <div class="row"><span>♥</span><span>♥</span><span>♥</span></div>
+        </div>
+      <div class="right">9♥</div>
+    </div>
+    <div class="card black">
+      <div class="left">10♠</div>
+      <div class="middle">
+        <div class="row"><span>♠</span><span>♠</span><span>♠</span></div>
+        <div class="row"><span>♠</span><span>♠</span><span>♠</span></div>
+        <div class="row"><span>♠</span><span>♠</span><span>♠</span></div>
+        <div class="row"><span>♠</span></div>
+      </div>
+      <div class="right">10♠</div>
+    </div>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#playing-cards {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 20px;
+  padding: 20px;
+}
+
+.card {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 360px;
+  height: 540px;
+  border: 2px solid black;
+  border-radius: 10px;
+  background-color: white;
+  font-family: "Georgia", serif;
+  box-shadow: 2px 4px 6px rgba(0,0,0,0.2);
+  padding: 8px;
+  font-size: 72px;
+}
+
+.card.red {
+  color: red;
+}
+
+.card.black {
+  color: black;
+}
+
+.left {
+  align-self: flex-start;
+  font-size: 48px;
+}
+
+.middle {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  align-self: center;
+  flex: 1;
+  font-size: 72px;
+}
+
+
+.right {
+  align-self: flex-end;
+  transform: rotate(180deg);
+  font-size: 48px;
+}
+
+.middle .row {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+** end of styles.css **
+

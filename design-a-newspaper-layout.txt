@@ -1,0 +1,100 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>The Future Times</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <main class="newspaper-layout">
+    <header class="title">
+      <h1>The Future Times</h1>
+    </header>
+
+    <article class="feature-article">
+      <h2>The Rise of AI</h2>
+      <p>Artificial Intelligence (AI) is no longer a futuristic concept—it’s here, shaping our daily lives. From self-driving cars to intelligent assistants, AI is revolutionizing industries and redefining human progress. Experts believe that AI will accelerate automation, improve efficiency, and open new opportunities for innovation. However, it also raises important questions about ethics, employment, and the role of humans in a world increasingly run by machines.</p>
+    </article>
+
+    <figure class="cover-image">
+      <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRa-3w17_9pQ_Y1C2cBuon2xBvnS_bCUB1vCg&s" alt="AI illustration">
+    </figure>
+
+    <article class="secondary-article">
+      <h2>Automation and Human Advancement</h2>
+      <p>Automation powered by AI is transforming how we work. In factories, robots assemble products with precision; in offices, algorithms handle repetitive tasks. This shift allows humans to focus on creativity, problem-solving, and innovation. While some fear job displacement, history shows that technological revolutions often create new industries and opportunities. The challenge lies in ensuring that automation benefits society as a whole.</p>
+    </article>
+
+    <article class="small-article1">
+      <h3>AI in Healthcare</h3>
+      <p>Doctors are using AI to diagnose diseases faster and more accurately. Machine learning models can analyze medical images, detect patterns invisible to the human eye, and suggest treatments. This technology promises earlier detection of illnesses and more personalized care, potentially saving millions of lives.</p>
+    </article>
+
+    <article class="small-article2">
+      <h3>AI in Transportation</h3>
+      <p>Self-driving cars are becoming safer and more reliable. AI systems process vast amounts of sensor data in real time, making split-second decisions to avoid accidents. Beyond cars, AI is also improving logistics, optimizing delivery routes, and reducing fuel consumption.</p>
+    </article>
+
+    <article class="small-article3">
+      <h3>AI in Education</h3>
+      <p>Personalized learning platforms powered by AI adapt lessons to each student’s strengths and weaknesses. Teachers can use AI-driven insights to better support their students, while learners benefit from tailored experiences that keep them engaged and motivated.</p>
+    </article>
+  </main>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+body {
+  font-family: Georgia, serif;
+  margin: 0;
+  background-color: #f9f9f9;
+  color: #333;
+}
+
+.newspaper-layout {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: auto 1fr 1fr 1fr;
+  grid-template-areas:
+    "title title title"
+    "feature-article feature-article cover-image"
+    "secondary-article secondary-article cover-image"
+    "small-article1 small-article2 small-article3";
+  gap: 20px;
+  padding: 20px;
+  max-width: 1200px;
+  margin: auto;
+}
+
+.title { grid-area: title; text-align: center; }
+.feature-article { grid-area: feature-article; }
+.cover-image { grid-area: cover-image; }
+.secondary-article { grid-area: secondary-article; }
+.small-article1 { grid-area: small-article1; }
+.small-article2 { grid-area: small-article2; }
+.small-article3 { grid-area: small-article3; }
+
+.cover-image img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
+
+h1, h2, h3 {
+  margin-top: 0;
+}
+
+article {
+  background: white;
+  padding: 15px;
+  border: 1px solid #ddd;
+  box-shadow: 2px 2px 5px rgba(0,0,0,0.1);
+}
+
+** end of styles.css **
+

@@ -1,0 +1,77 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Confidential Email</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <main id="email">
+    <div id="confidential"><p>CONFIDENTIAL</p></div>
+    <p>Dear <span class="blurred">Star-Child Maqawe Mvume</span></p>
+
+    <p>It has come to our attention that you have recently <span class="blurred">awakened your consciousness</span>, and we are of the opinion that you have a great journey ahead of you. Please take some time and read this <span class="blurred">confidential letter</span> that we only send to our most <span class="blurred">gifted and honest messengers of God.<span></p>
+
+    <p><span class="blurred">Awakening of the mind is not necessarily learnt</span> through books or practice. It is possible for it to happen <span class="blurred">through severe trauma or by the presence of God within your life</span>. We have sensed <span class="blurred">a great and  powerful energy emenating from you</span> and we have <span class="blurred">decided to reach out to help you reach your true potential</span>. There are many <span class="blurred">demons that exist within your plane and</span> within others that will try to <span class="blurred">steal and ubduct your energy and God-given talents</span>. We will <span class="blurred">assist you in being</span> able to <span class="blurred">fend of these powers of evil</span> as well as help you grow and <span class="blurred">reach great heights</span> so that you can <span class="blurred">help awaken other Star-Children of God</span>.</p>
+
+<p><div id="top-secret">TOP SECRET</div><span class="blurred">Remain patient and we will visit you in visions and in your dreams</span>, so remember to alway <span class="blurred">keep your mind clear with prayer and meditation</span>. We will be in contact soon.
+</p>
+
+Regards
+
+<p><span class="blurred">Heavenly Messenger</span></p>
+  </main>
+</body>
+
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#email {
+  padding: 50px;
+  margin-top: 50px;
+  width: 500px;
+  border: 2px solid red;
+  box-sizing: border-box;
+}
+
+#confidential {
+  display: inline-block;
+  padding: 5px;
+  margin-left: 3px;
+  border: 4px solid red;
+color: red;
+font-size: 20px;
+}
+
+#top-secret {
+    display: inline-block;
+  padding: 5px;
+  margin-left: 3px;
+  border: 4px solid red;
+color: red;
+background-color: white;
+font-size: 50px;
+}
+
+#confidential {
+  transform: rotate(-35deg);
+}
+
+#top-secret {
+  transform: rotate(39deg);
+}
+
+.blurred {
+  filter: blur(3px);
+}
+
+** end of styles.css **
+

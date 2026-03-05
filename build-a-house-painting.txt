@@ -1,0 +1,150 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>House Painting</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div id="house">
+        <div id="chimney"></div>
+        <div id="roof"></div>
+        <div id="window-1"></div>
+        <div id="window-2"></div>
+        <div id="door"></div>
+    </div>
+</body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+#house {
+  position: relative;
+  width: 500px;
+  height: 400px;
+  background-color: #c9a659;
+  border: 3px solid black;
+  margin: 200px;
+}
+
+#roof {
+  position: absolute;
+  width: 500px;
+  height: 130px;
+  border: 3px solid black;
+  background-color: #403317;
+  top: 0;
+  z-index: 0;
+}
+
+#roof {
+  background-image: repeating-linear-gradient(
+    45deg,
+    #403317,
+    #403317 10px,
+    #5a4420 10px,
+    #5a4420 20px
+  );
+}
+
+#chimney {
+  position: absolute;
+  width:100px;
+  height: 120px;
+  border: 2px solid black;
+  background-color: #858076;
+  top: -120px;
+  left: 350px;
+  z-index: -1;
+}
+
+#window-1 {
+  width: 80px;
+  height: 80px;
+  border: 3px solid brown;
+  background-color: #f7e04a;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  left: 60px;
+}
+
+#window-2 {
+  width: 80px;
+  height: 80px;
+  border: 3px solid brown;
+  background-color: #f7e04a;
+  border-radius: 50%;
+  position: absolute;
+  top: 140px;
+  right: 60px;
+}
+
+#window-1::before,
+#window-1::after,
+#window-2::before,
+#window-2::after {
+  content: "";
+  position: absolute;
+  background-color: brown;
+}
+
+#window-1::before,
+#window-2::before {
+  width: 3px;
+  height: 80px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
+#window-1::after,
+#window-2::after {
+  height: 3px;
+  width: 80px;
+  top:50%;
+  transform: translateY(-50%);
+}
+
+#door {
+  width: 120px;
+  height: 200px;
+  border: 2px solid black;
+  background-color: #9c6527;
+  bottom: 0;
+  left: 190px;
+  position: absolute;
+}
+
+#door::before {
+  content: "";
+  position: absolute;
+  width: 10px;
+  height: 10px;
+  background-color: black;
+  border-radius:50%;
+  right: 20px;
+  top: 100px;
+}
+
+#door::after {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background-image: repeating-linear-gradient(
+    to right,
+    #a56c2e 0px,
+    #a56c2e 20px,
+    #9c6527 20px,
+    #9c6527 40px
+  );
+  opacity: 0.3;
+}
+
+** end of styles.css **
+

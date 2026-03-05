@@ -1,0 +1,94 @@
+** start of index.html **
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Pricing Plans Layout Page</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+    <h1>Pricing Plans</h1>
+  <body>
+    <div class="pricing-container">
+      <div class="pricing-card basic-plan">
+        <h2>Basic</h2>
+        <p>$9/month</p>
+      </div>
+      <div class="pricing-card pro-plan">
+        <h2>Pro</h2>
+        <p>$19/month</p>
+      </div>
+      <div class="pricing-card premium-plan">
+        <h2>Premium</h2>
+        <p>$29/month</p>
+      </div>
+    </div>
+  </body>
+</html>
+
+** end of index.html **
+
+** start of styles.css **
+
+* {
+  text-align: center;
+  border-radius: 10px;
+  
+}
+
+body {
+  background-color: #fafafa;
+}
+
+h1 {
+  background-color: rgb(2, 2, 43);
+  color: white;
+  font-size: 50px;
+  padding: 10px;
+  margin-top: 20px;
+  margin-bottom: 20px;
+  border-bottom: 20px solid orange;
+  font-family: sans-serif;
+}
+
+.pricing-container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  border: 20px solid orange;
+  padding: 15px 15px;
+  background-color: #fafafa;
+}
+
+.pricing-card {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  flex: 0 0 200px;
+  border: 2px solid black;
+  margin: 20px;
+  height: 300px;
+  background-color: rgb(2, 2, 43);
+  color: white;
+  transition: transform 0.3s ease;
+}
+
+.pricing-card:hover {
+  transform: scale(1.05);
+}
+
+.basic-plan {
+  order: 0;
+}
+
+.pro-plan {
+  order: 1;
+  flex-grow: 2
+}
+
+.premium-plan {
+  order: 2;
+}
+
+** end of styles.css **
+
